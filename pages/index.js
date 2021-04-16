@@ -8,7 +8,7 @@ function Homepage() {
     useEffect(() => {
 
         async function fetchData() {
-            await fetch("https://testing-app.onrender.com/api/header", { mode: "no-cors" })
+            await fetch("https://testing-app.onrender.com/api/header")
             .then(res => res.json())
             .then(msg => setMessage(msg))
             .catch(err => null)
